@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: sans-serif;
+      background-color: #222;
+      color: white;
+    }
+
+    .neobrutalist-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      height: 500px;
+      background-color: #333;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .neobrutalist-card:hover {
+      transform: scale(1.1);
+    }
+
+    .neobrutalist-card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin: 20px 0;
+    }
+
+    .neobrutalist-card h1 {
+      margin: 10px 0;
+      font-size: 32px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .neobrutalist-card p {
+      margin: 10px 0;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .neobrutalist-card button {
+      appearance: none;
+      border: none;
+      background-color: #222;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .neobrutalist-card button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="neobrutalist-card">
+    <img src="profile.jpg" alt="Profile Picture">
+    <h1>Esteban Gómez Ramírez</h1>
+    <p>Good guy</p>
+    <button onclick="window.location.href='mailto:egomez99@hotmail.es'">Contact Me</button>
+  </div>
+</body>
+</html>
