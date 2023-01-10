@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 300px;
+      height: 400px;
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 10px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .card h2 {
+      margin: 10px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .card p {
+      margin: 10px;
+      font-size: 16px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="project1.jpg" alt="Project 1">
+      <h2>Project 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+    <div class="card">
+      <img src="project2.jpg" alt="Project 2">
+      <h2>Project 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+    <div class="card">
+      <img src="project3.jpg" alt="Project 3">
+      <h2>Project 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </div>
+  </div>
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', ()
